@@ -1,10 +1,10 @@
-var $ = require('jquery');
-require('jquery-ui/autocomplete');
+import $ from 'jquery';
+import {} from 'jquery-ui/autocomplete';
+import {getProtoChain} from 'prototype';
 
 var availableTags = [];
 Object.keys(window).forEach(function (v) {
     availableTags.push(v);
-    console.log(v);
 });
 
 
@@ -16,9 +16,11 @@ $("#aio").autocomplete({
     }
 
     // 回车
-    var term = $(this).val().trim();
-    if (term === '') {
+    var code = $(this).val().trim();
+    if (code === '') {
         return 2;
     }
-    console.log(term);
+    console.log(code);
+
+    console.log(getProtoChain(eval('(' + code + ')')));
 });
