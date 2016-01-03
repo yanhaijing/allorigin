@@ -1,0 +1,15 @@
+<div class="wgt-proto-chain">
+    <#list.forEach(function (v, k) {#>
+    <div class="proto-item">
+        <header>
+            <h3>
+                <#if (k === 0) {#>
+                    <#=v#>
+                <#} else {#>
+                    <#=(v && v.constructor.name) || v#>
+                <#}#>
+            </h3>
+        </header>
+    </div>
+    <#})#>
+</div>
