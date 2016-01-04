@@ -1,3 +1,10 @@
+/**
+ * @file index文件
+ * @author yanhaijing.com
+ * @date 2016年1月4日 19:33:51
+ * @require proto-chain.scss
+ */
+
 import $ from 'jquery';
 import {} from 'jquery-ui/autocomplete';
 import {getProtoChain} from 'prototype';

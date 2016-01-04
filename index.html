@@ -6,7 +6,7 @@
     <meta content="telephone=no" name="format-detection"/>
     <meta content="address=no" name="format-detection"/>
 
-    <title>Document</title>
+    <title>AllTree</title>
     <link rel="stylesheet" href="modules/css/common.scss">
     <link rel="stylesheet" href="components/jquery-ui/themes/base/core.css">
     <link rel="stylesheet" href="components/jquery-ui/themes/base/autocomplete.css">
@@ -22,17 +22,15 @@
     <![endif]-->
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <h1>
-                AllTree
-            </h1>
-        </div>
-    </header>
+    <link rel="import" href="modules/html/header/header.html?__inline">
+    
     <div class="container">
-        <input type="text" id="aio" class="aio" placeholder="对象 元素">
+        <input type="text" id="aio" class="aio" placeholder="对象 元素" autofocus>
         <div id="screen"></div>
     </div>
+
+    <link rel="import" href="modules/html/footer/footer.html?__inline">
+
     <script src="lib/mod.js"></script>
     <script>
         require.async('modules/app/index.es');

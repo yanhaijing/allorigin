@@ -1,16 +1,6 @@
 @import "mixin/clearfix";
 @import "compass-mixins/compass";
 
-.header {
-    height: 50px;
-    background: #303a40;
-    h1 {
-        margin: 0;
-        line-height: 50px;
-        color: #fff;
-    }
-}
-
 .aio {
     margin-top: 40px;
     width: 100%;

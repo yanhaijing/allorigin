@@ -1,5 +1,13 @@
 @import "normalize.css/normalize.css";
 
+a {
+    color: #428bca;
+    text-decoration: none;
+    &:hover {
+        color: #2a6496;
+        text-decoration: underline;
+    }
+}
 .container {
     margin: auto;
     width: 1100px;

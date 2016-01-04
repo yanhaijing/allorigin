@@ -1,0 +1,16 @@
+.wgt-header {
+    height: 50px;
+    background: #303a40;
+    h1 {
+        margin: 0;
+        line-height: 50px;
+        color: #fff;
+    }
+    a {
+        color: #9d9d9d;
+        text-decoration: none;
+        &:hover {
+            color: #fff;
+        }
+    }
+}
