@@ -1,0 +1,18 @@
+<div class="wgt-common-case">
+    <#cols.forEach(function (areas) {#>
+        <div class="col">
+            <#areas.forEach(function (area) {#>
+                <div class="area">
+                    <h4><#=area.title#></h4>
+                    <ul>
+                        <#area.list.forEach(function (v) {#>
+                            <li data-code="<#=v.code#>">
+                                &lt;<#=v.title#>&gt;
+                            </li>
+                        <#})#>
+                    </ul>
+                </div><!-- .area -->
+            <#})#>
+        </div><!-- .col -->
+    <#})#>
+</div><!-- .wgt-common-case -->

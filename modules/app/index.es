@@ -6,42 +6,65 @@
  */
 
 import $ from 'jquery';
-import {} from 'jquery-ui/autocomplete';
-import {getProtoChain} from 'prototype';
-import {} from 'util/template/template';
-
-var protoChainTpl = __inline('proto-chain.tmpl');
+import 'jquery-ui/autocomplete';
+import page from 'lib/page.js/page';
+import {CommonCase} from 'common-case';
+import {ProtoChain} from 'proto-chain';
 
 var $screen = $('#screen');
+var $aio = $("#aio");
+var commonCase = new CommonCase();
+var protoChain = new ProtoChain();
 
-var availableTags = [];
-Object.keys(window).forEach(function (v) {
-    availableTags.push(v);
-});
+function bindEvent() {
+    $aio.on('keypress', function (e) {
+        if (e.keyCode !== 13) {
+            return 1;
+        }
 
-function render(chain) {
-    $screen.html(protoChainTpl({list: chain}));
+        // 回车
+        var code = $(this).val().trim();
+        if (code === '') {
+            page('/');
+            return 2;
+        }
+
+        page('/?code=' + code);
+    });
+
+    commonCase.on('select', function (e, data) {
+        page('/?code=' + data.code);
+    });
+}
+function init() {
+    // 初始化输入框
+    var availableTags = [];
+    Object.keys(window).forEach(function (v) {
+        availableTags.push(v);
+    });
+
+    $aio.autocomplete({
+        source: availableTags
+    });
+
+    // 配置路由
+    page.base('/');
+    page('*', function (ctx, next) {
+        if (ctx.querystring.search('code') < 0) {
+            next();
+            return 1;
+        }
+        var code = ctx.querystring.split(';')[0].split('=')[1];
+        protoChain.render(code);
+    });
+    page('/', function (ctx, next) {
+        commonCase.render();
+    });
+
+    page();
+    
+    // 绑定事件
+    bindEvent();
 }
 
-$("#aio").autocomplete({
-    source: availableTags
-}).on('keypress', function (e) {
-    if (e.keyCode !== 13) {
-        return 1;
-    }
-
-    // 回车
-    var code = $(this).val().trim();
-    if (code === '') {
-        return 2;
-    }
-
-    var target;
-    try {
-        target = eval('(' + code + ')');
-        console.log(getProtoChain(target));
-        render(getProtoChain(target));
-    } catch(exp) {
-        alert(exp.message);
-    }
-});
+export {init};

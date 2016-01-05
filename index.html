@@ -33,7 +33,9 @@
 
     <script src="lib/mod.js"></script>
     <script>
-        require.async('modules/app/index.es');
+        require.async('modules/app/index.es', function(O) {
+            O.init();
+        });
     </script>
     <!--SCRIPT_PLACEHOLDER-->
 </body>
