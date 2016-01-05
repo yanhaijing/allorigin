@@ -11,7 +11,10 @@
             </h3>
         </header>
         <div class="body">
-            123
+            <p>类型：<#=type(v)#></p>
+            <p>自身属性(可枚举)：<#=getOwnMember(v).length#></p>
+            <p>自身属性(全部)：<#=getOwnAllMember(v).length#></p>
+            <p>继承属性(可枚举)：<#=getMember(v).length#></p>
         </div>
         <#if (k < list.length - 1) {#>
             <div class="arrow">

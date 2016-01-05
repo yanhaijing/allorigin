@@ -8,6 +8,7 @@
 import $ from 'jquery';
 import 'jquery-ui/autocomplete';
 import page from 'lib/page.js/page';
+import {getQueryString} from 'util/uri/uri';
 import {CommonCase} from 'common-case';
 import {ProtoChain} from 'proto-chain';
 
@@ -25,15 +26,15 @@ function bindEvent() {
         // 回车
         var code = $(this).val().trim();
         if (code === '') {
-            page('/');
+            page('#index');
             return 2;
         }
 
-        page('/?code=' + code);
+        page('#search?code=' + code);
     });
 
     commonCase.on('select', function (e, data) {
-        page('/?code=' + data.code);
+        page('#search?code=' + data.code);
     });
 }
 function init() {
@@ -50,12 +51,25 @@ function init() {
     // 配置路由
     page.base('/');
     page('*', function (ctx, next) {
-        if (ctx.querystring.search('code') < 0) {
-            next();
+        var hashs = ctx.hash.split('?');
+        var path = hashs[0];
+        var queryString = hashs[1];
+
+        // 首页
+        if (path === 'index') {
+            commonCase.render();
             return 1;
         }
-        var code = ctx.querystring.split(';')[0].split('=')[1];
-        protoChain.render(code);
+
+        // 搜索页
+        if (path === 'search') {
+            protoChain.render(getQueryString('code', queryString));
+            return 2;
+        }
+
+        // 下一个匹配
+        next();
+        return 0;
     });
     page('/', function (ctx, next) {
         commonCase.render();

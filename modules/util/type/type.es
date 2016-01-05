@@ -20,8 +20,7 @@ function type(x) {
     try {
         c = toString.call(x).slice(8, -1).toLowerCase();
     } catch(exp) {
-        console.log(exp);
-        return 'unknown';
+        return 'object';
     }
     if(c !== 'object'){
         return c;
@@ -34,4 +33,16 @@ function type(x) {
     return 'unknown';
 }
 
-export {type};
+function isFunction(x) {
+    return type(x) === 'function';
+}
+function isNull(x) {
+    return type(x) === 'null';
+}
+function isUndef(x) {
+    return type(x) === 'undefined';
+}
+function isNullOrUndef(x) {
+    return isNull(x) || isUndef(x);
+}
+export {type, isFunction, isNull, isUndef, isNullOrUndef};

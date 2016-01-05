@@ -5,8 +5,10 @@
  */
 
 import {UIBase} from 'ui/base/base';
-import {getProtoChain} from 'prototype';
+import {getProtoChain, getMember, getOwnMember, getOwnAllMember} from 'object';
 import 'util/template/template';
+import {type} from 'util/type/type';
+
 var protoChainTpl = __inline('proto-chain.tmpl');
 
 class ProtoChain extends UIBase {
@@ -18,7 +20,11 @@ class ProtoChain extends UIBase {
         var target;
         try {
             target = eval('(' + code + ')');
-            this.$screen.html(protoChainTpl({list: getProtoChain(target)}));
+            this.$screen.html(protoChainTpl({
+                list: getProtoChain(target),
+                type,
+                getMember, getOwnMember, getOwnAllMember
+            }));
         } catch(exp) {
             alert(exp.message);
         }

@@ -1,3 +1,10 @@
+@import "compass-mixins/compass";
+@import "mixin";
+
 .wgt-common-case {
-    
+    @include clearfix();
+    .col {
+        float: left;
+        width: 25%;
+    }
 }
