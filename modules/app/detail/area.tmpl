@@ -1,0 +1,11 @@
+<div class="area">
+    <h3><#=title#></h3>
+    <ul>
+        <#list.forEach(function (v) {#>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/search?q=<#=target.name + '.' + v#>"><#=v#></a>
+                <#=type(target[v])#>
+            </li>
+        <#})#>
+    </ul>
+</div>

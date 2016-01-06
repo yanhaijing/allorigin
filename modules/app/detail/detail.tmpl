@@ -1,40 +1,28 @@
 <div class="wgt-detail">
     <header>
         <h2>
-            <#=target#>
+            <a href="https://developer.mozilla.org/en-US/search?q=<#=target.name#>"><#=target#></a>
             <span><#=type(target)#></span>
         </h2>
     </header>
     <div class="body">
-        <div class="area">
-            <h3>自身属性(可枚举)</h3>
-            <ul>
-                <#getOwnMember(target).forEach(function (v) {#>
-                    <li>
-                        <#=v#>
-                    </li>
-                <#})#>
-            </ul>
-        </div>
-        <div class="area">
-            <h3>自身属性(全部)</h3>
-            <ul>
-                <#getOwnAllMember(target).forEach(function (v) {#>
-                    <li>
-                        <#=v#>
-                    </li>
-                <#})#>
-            </ul>
-        </div>
-        <div class="area">
-            <h3>继承属性(可枚举)</h3>
-            <ul>
-                <#getMember(target).forEach(function (v) {#>
-                    <li>
-                        <#=v#>
-                    </li>
-                <#})#>
-            </ul>
-        </div>
+        <#:=areaTpl({
+            title: '自身属性(可枚举)',
+            list: getOwnMember(target), 
+            target: target, 
+            type: type
+        })#>
+        <#:=areaTpl({
+            title: '自身属性(全部)',
+            list: getOwnAllMember(target), 
+            target: target, 
+            type: type
+        })#>
+        <#:=areaTpl({
+            title: '继承属性(可枚举)',
+            list: getMember(target), 
+            target: target, 
+            type: type
+        })#>
     </div>
 </div>

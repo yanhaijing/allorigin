@@ -9,6 +9,7 @@ import {type, isFunction, isNullOrUndef} from 'util/type/type';
 import {getProtoChain, getMember, getOwnMember, getOwnAllMember} from 'app/object';
 
 var detailTpl = __inline('detail.tmpl');
+var areaTpl = __inline('area.tmpl');
 
 class Detail extends UIBase {
     constructor() {
@@ -21,6 +22,7 @@ class Detail extends UIBase {
             target = eval('(' + code + ')');
 
             this.$wp.html(detailTpl({
+                areaTpl,
                 target,
                 type,
                 getMember, getOwnMember, getOwnAllMember
