@@ -9,8 +9,9 @@ import $ from 'jquery';
 import 'jquery-ui/autocomplete';
 import page from 'lib/page.js/page';
 import {getQueryString} from 'util/uri/uri';
-import {CommonCase} from 'common-case';
-import {ProtoChain} from 'proto-chain';
+import {CommonCase} from 'common-case/common-case';
+import {ProtoChain} from 'proto-chain/proto-chain';
+import {render as renderAbout} from 'about/about';
 
 var $screen = $('#screen');
 var $aio = $("#aio");
@@ -64,6 +65,12 @@ function init() {
         // 搜索页
         if (path === 'search') {
             protoChain.render(getQueryString('code', queryString));
+            return 2;
+        }
+
+        // 关于介绍
+        if (path === 'about') {
+            renderAbout()
             return 2;
         }
 

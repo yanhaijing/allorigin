@@ -1,4 +1,4 @@
-# All tree
+# All Origin
 展示每个对象的继承树
 
 ## 说明文档

@@ -4,8 +4,9 @@
  * @date 2016年1月5日 17:32:50
  */
 
+import $ from 'jquery';
 import {UIBase} from 'ui/base/base';
-import {getProtoChain, getMember, getOwnMember, getOwnAllMember} from 'object';
+import {getProtoChain, getMember, getOwnMember, getOwnAllMember} from 'app/object';
 import 'util/template/template';
 import {type} from 'util/type/type';
 

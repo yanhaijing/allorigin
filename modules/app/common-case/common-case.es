@@ -3,6 +3,8 @@
  * @author yanhaijing.com
  * @date 2016年1月5日 16:56:47
  */
+
+import $ from 'jquery';
 import {UIBase} from 'ui/base/base';
 import 'util/template/template';
 

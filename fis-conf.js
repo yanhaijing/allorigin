@@ -1,5 +1,5 @@
 // 设置项目属性
-fis.set('project.name', 'alltree');
+fis.set('project.name', 'allorigin');
 fis.set('project.static', '/static');
 fis.set('project.files', ['*.html', 'map.json', '/test/*']);
 
