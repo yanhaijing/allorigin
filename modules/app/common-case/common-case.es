@@ -23,7 +23,7 @@ cols[0][0] = {
 
 html.forEach(function (v) {
     cols[0][0].list.push({
-        title: v,
+        title: '<' + v + '>',
         code: `document.createElement("${v}")`
     });
 });
@@ -34,9 +34,120 @@ cols[1][0] = {
     'title': 'JavaScript',
     'list': []
 };
+cols[1][0].list = [
+    {
+        title: 'undefined',
+        code: 'undefined'
+    },
+    {
+        title: 'null',
+        code: 'null'
+    },
+    {
+        title: 'number literal',
+        code: '123'
+    },
+    {
+        title: 'new Number',
+        code: 'new Number(123)'
+    },
+    {
+        title: 'string literal',
+        code: '"string"'
+    },
+    {
+        title: 'new String',
+        code: 'new String("string")'
+    },
+    {
+        title: 'boolean literal',
+        code: 'true'
+    },
+    {
+        title: 'new Boolean',
+        code: 'new Boolean(true)'
+    },
+    {
+        title: 'Symbol⑥',
+        code: 'Symbol()'
+    },
+    {
+        title: 'array literal',
+        code: '[1]'
+    },
+    {
+        title: 'new Array',
+        code: 'new Array()'
+    },
+    {
+        title: 'new Set⑥',
+        code: 'new Set()'
+    },
+    {
+        title: 'new WeakSet⑥',
+        code: 'new WeakSet()'
+    },
+    {
+        title: 'new Map⑥',
+        code: 'new Map()'
+    },
+    {
+        title: 'new WeakMap⑥',
+        code: 'new WeakMap()'
+    },
+    {
+        title: 'function literal',
+        code: 'function() {}'
+    },
+    {
+        title: 'arrow function',
+        code: 'x => x'
+    },
+    {
+        title: 'new Function',
+        code: 'new Function()'
+    },
+    {
+        title: 'object literal',
+        code: '{a: 1}'
+    },
+    {
+        title: 'new Object',
+        code: 'new Object()'
+    },
+    {
+        title: 'class⑥',
+        code: 'class A{}'
+    },
+    {
+        title: 'regexp literal',
+        code: '/1/'
+    },
+    {
+        title: 'new RegExp',
+        code: 'new RegExp()'
+    },
+    {
+        title: 'new Date',
+        code: 'new Date()'
+    },
+    {
+        title: 'Math',
+        code: 'Math'
+    },
+    {
+        title: 'new Promise⑥',
+        code: 'new Promise(function(){})'
+    },
+    // {
+    //     title: 'console',
+    //     code: 'console'
+    // },
+];
 
-var js = [];
+// 处理第三列
 
+// 处理第四列
 
 class CommonCase extends UIBase {
     constructor() {
