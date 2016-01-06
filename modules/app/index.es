@@ -11,12 +11,14 @@ import page from 'lib/page.js/page';
 import {getQueryString} from 'util/uri/uri';
 import {CommonCase} from 'common-case/common-case';
 import {ProtoChain} from 'proto-chain/proto-chain';
+import {Detail} from 'detail/detail';
 import {render as renderAbout} from 'about/about';
 
 var $screen = $('#screen');
 var $aio = $("#aio");
 var commonCase = new CommonCase();
 var protoChain = new ProtoChain();
+var detail = new Detail();
 
 function bindEvent() {
     $aio.on('keypress', function (e) {
@@ -36,6 +38,10 @@ function bindEvent() {
 
     commonCase.on('select', function (e, data) {
         page('#search?code=' + data.code);
+    });
+
+    protoChain.on('select', function (e, data) {
+        page('#detail?code=' + data.code);
     });
 }
 function init() {
@@ -68,10 +74,17 @@ function init() {
             return 2;
         }
 
+        // 搜索页
+        if (path === 'detail') {
+            console.log(getQueryString('code', queryString));
+            detail.render(getQueryString('code', queryString));
+            return 3;
+        }
+
         // 关于介绍
         if (path === 'about') {
             renderAbout()
-            return 2;
+            return 9;
         }
 
         // 下一个匹配
