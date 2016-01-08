@@ -9,6 +9,8 @@ import $ from 'jquery';
 import 'jquery-ui/autocomplete';
 import page from 'lib/page.js/page';
 import {getQueryString} from 'util/uri/uri';
+import {type, isFunction, isNullOrUndef} from 'util/type/type';
+import {getProtoChain, getMember, getOwnMember, getOwnAllMember} from 'app/object';
 import {CommonCase} from 'common-case/common-case';
 import {ProtoChain} from 'proto-chain/proto-chain';
 import {Detail} from 'detail/detail';
@@ -33,26 +35,21 @@ function bindEvent() {
             return 2;
         }
 
-        page('#search?code=' + code);
+        page('#search?code=' + encodeURIComponent(code));
     });
 
     commonCase.on('select', function (e, data) {
-        page('#search?code=' + data.code);
+        page('#search?code=' + encodeURIComponent(data.code));
     });
 
     protoChain.on('select', function (e, data) {
-        page('#detail?code=' + data.code);
+        page('#detail?code=' + encodeURIComponent(data.code));
     });
 }
 function init() {
     // 初始化输入框
-    var availableTags = [];
-    Object.keys(window).forEach(function (v) {
-        availableTags.push(v);
-    });
-
     $aio.autocomplete({
-        source: availableTags
+        source: getOwnMember(window)
     });
 
     // 配置路由
@@ -70,14 +67,14 @@ function init() {
 
         // 搜索页
         if (path === 'search') {
-            protoChain.render(getQueryString('code', queryString));
+            protoChain.render(decodeURIComponent(getQueryString('code', queryString)));
             return 2;
         }
 
         // 搜索页
         if (path === 'detail') {
             console.log(getQueryString('code', queryString));
-            detail.render(getQueryString('code', queryString));
+            detail.render(decodeURIComponent(getQueryString('code', queryString)));
             return 3;
         }
 
