@@ -3,7 +3,7 @@
     <ul>
         <#list.forEach(function (v) {#>
             <li>
-                <a href="https://developer.mozilla.org/en-US/search?q=<#=target.name + '.' + v#>"><#=v#></a>
+                <a href="https://developer.mozilla.org/en-US/search?q=<#=getName(target) + '.' + v#>"><#=v#></a>
                 <#=type(target[v])#>
             </li>
         <#})#>

@@ -33,6 +33,10 @@ function type(x) {
     return 'unknown';
 }
 
+function isObject(x) {
+    return type(x) === 'object';
+}
+
 function isFunction(x) {
     return type(x) === 'function';
 }
@@ -45,4 +49,4 @@ function isUndef(x) {
 function isNullOrUndef(x) {
     return isNull(x) || isUndef(x);
 }
-export {type, isFunction, isNull, isUndef, isNullOrUndef};
+export {type, isObject, isFunction, isNull, isUndef, isNullOrUndef};
