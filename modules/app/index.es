@@ -73,7 +73,6 @@ function init() {
 
         // 搜索页
         if (path === 'detail') {
-            console.log(getQueryString('code', queryString));
             detail.render(decodeURIComponent(getQueryString('code', queryString)));
             return 3;
         }
