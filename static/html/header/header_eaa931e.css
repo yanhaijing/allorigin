@@ -1,0 +1,5 @@
+.wgt-header{height:50px;background:#303a40}
+.wgt-header h1{display:inline-block;margin:0;line-height:50px;color:#fff;font-size:24px}
+.wgt-header a{color:#9d9d9d;text-decoration:none}
+.wgt-header a:hover{color:#fff}
+.wgt-header .nav-link{padding:0 15px}

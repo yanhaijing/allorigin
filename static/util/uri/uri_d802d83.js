@@ -1,0 +1,1 @@
+define("modules/util/uri/uri.es",function(e,u){"use strict";function n(e,u){var n=new RegExp("(^|&)"+e+"=([^&]*)(&|$)","i");u=u||window.location.search.substr(1);var r=u.match(n);return null!=r?unescape(r[2]):null}Object.defineProperty(u,"__esModule",{value:!0}),u.getQueryString=n});

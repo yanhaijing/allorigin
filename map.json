@@ -1,0 +1,390 @@
+{
+    "res": {
+        "modules/css/common.scss": {
+            "uri": "http://yanhaijing.com/allorigin/static/css/common_cb0470d.css",
+            "type": "css",
+            "pkg": "p0"
+        },
+        "components/jquery-ui/themes/base/core.css": {
+            "uri": "http://yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/core_f52ee82.css",
+            "type": "css",
+            "pkg": "p1"
+        },
+        "components/jquery-ui/themes/base/autocomplete.css": {
+            "uri": "http://yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/autocomplete_f2b9428.css",
+            "type": "css",
+            "pkg": "p1"
+        },
+        "components/jquery-ui/themes/base/theme.css": {
+            "uri": "http://yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/theme_1d012b1.css",
+            "type": "css",
+            "pkg": "p1"
+        },
+        "modules/css/index.scss": {
+            "uri": "http://yanhaijing.com/allorigin/static/css/index_dc0c329.css",
+            "type": "css"
+        },
+        "lib/es5-shim.js": {
+            "uri": "http://yanhaijing.com/allorigin/static/lib/es5-shim_8fae655.js",
+            "type": "js",
+            "pkg": "p2"
+        },
+        "lib/es5-sham.js": {
+            "uri": "http://yanhaijing.com/allorigin/static/lib/es5-sham_5b7bef3.js",
+            "type": "js",
+            "pkg": "p2"
+        },
+        "lib/html5-shim.js": {
+            "uri": "http://yanhaijing.com/allorigin/static/lib/html5-shim_0ab0ff4.js",
+            "type": "js"
+        },
+        "modules/html/header/header.scss": {
+            "uri": "http://yanhaijing.com/allorigin/static/html/header/header_eaa931e.css",
+            "type": "css",
+            "pkg": "p3"
+        },
+        "modules/html/footer/footer.scss": {
+            "uri": "http://yanhaijing.com/allorigin/static/html/footer/footer_14f39c4.css",
+            "type": "css",
+            "pkg": "p3"
+        },
+        "modules/html/forkme/forkme.scss": {
+            "uri": "http://yanhaijing.com/allorigin/static/html/forkme/forkme_e2e96d9.css",
+            "type": "css",
+            "pkg": "p3"
+        },
+        "lib/mod.js": {
+            "uri": "http://yanhaijing.com/allorigin/static/lib/mod_4296a9b.js",
+            "type": "js"
+        },
+        "lib/baidutongji.js": {
+            "uri": "http://yanhaijing.com/allorigin/static/lib/baidutongji_5b0f584.js",
+            "type": "js"
+        },
+        "modules/app/index.es": {
+            "uri": "http://yanhaijing.com/allorigin/static/app/index_ba6418b.js",
+            "type": "js",
+            "deps": [
+                "proto-chain.scss",
+                "components/jquery/jquery.js",
+                "components/jquery-ui/autocomplete.js",
+                "modules/lib/page.js/page.js",
+                "modules/util/uri/uri.es",
+                "modules/util/type/type.es",
+                "modules/util/object/object.es",
+                "modules/app/common-case/common-case.es",
+                "modules/app/proto-chain/proto-chain.es",
+                "modules/app/detail/detail.es",
+                "modules/app/about/about.es"
+            ],
+            "pkg": "p4"
+        },
+        "components/jquery/jquery.js": {
+            "uri": "http://yanhaijing.com/allorigin/static/components/jquery/jquery_93349b6.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery/jquery"
+            },
+            "pkg": "p5"
+        },
+        "components/jquery-ui/autocomplete.js": {
+            "uri": "http://yanhaijing.com/allorigin/static/components/jquery-ui/autocomplete_987be4b.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/autocomplete"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/core.js",
+                "components/jquery-ui/widget.js",
+                "components/jquery-ui/position.js",
+                "components/jquery-ui/menu.js"
+            ],
+            "pkg": "p5"
+        },
+        "components/jquery-ui/core.js": {
+            "uri": "http://yanhaijing.com/allorigin/static/components/jquery-ui/core_c1cce7c.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/core"
+            },
+            "deps": [
+                "components/jquery/jquery.js"
+            ],
+            "pkg": "p5"
+        },
+        "components/jquery-ui/widget.js": {
+            "uri": "http://yanhaijing.com/allorigin/static/components/jquery-ui/widget_f71497c.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/widget"
+            },
+            "deps": [
+                "components/jquery/jquery.js"
+            ],
+            "pkg": "p5"
+        },
+        "components/jquery-ui/position.js": {
+            "uri": "http://yanhaijing.com/allorigin/static/components/jquery-ui/position_e642139.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/position"
+            },
+            "deps": [
+                "components/jquery/jquery.js"
+            ],
+            "pkg": "p5"
+        },
+        "components/jquery-ui/menu.js": {
+            "uri": "http://yanhaijing.com/allorigin/static/components/jquery-ui/menu_66ed85b.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/menu"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/core.js",
+                "components/jquery-ui/widget.js",
+                "components/jquery-ui/position.js"
+            ],
+            "pkg": "p5"
+        },
+        "modules/lib/page.js/page.js": {
+            "uri": "http://yanhaijing.com/allorigin/static/lib/page.js/page_8664c81.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "modules/lib/page.js/page"
+            },
+            "deps": [
+                "path-to-regexp",
+                "_process",
+                "isarray"
+            ],
+            "pkg": "p6"
+        },
+        "modules/util/uri/uri.es": {
+            "uri": "http://yanhaijing.com/allorigin/static/util/uri/uri_d802d83.js",
+            "type": "js",
+            "pkg": "p6"
+        },
+        "modules/util/type/type.es": {
+            "uri": "http://yanhaijing.com/allorigin/static/util/type/type_3914234.js",
+            "type": "js",
+            "pkg": "p6"
+        },
+        "modules/util/object/object.es": {
+            "uri": "http://yanhaijing.com/allorigin/static/util/object/object_899fb5e.js",
+            "type": "js",
+            "deps": [
+                "modules/util/type/type.es"
+            ],
+            "pkg": "p6"
+        },
+        "modules/app/common-case/common-case.es": {
+            "uri": "http://yanhaijing.com/allorigin/static/app/common-case/common-case_41ecd44.js",
+            "type": "js",
+            "deps": [
+                "components/jquery/jquery.js",
+                "modules/ui/base/base.es",
+                "modules/util/template/template.es",
+                "modules/app/common-case/common-case.scss"
+            ],
+            "pkg": "p4"
+        },
+        "modules/ui/base/base.es": {
+            "uri": "http://yanhaijing.com/allorigin/static/ui/base/base_f78248b.js",
+            "type": "js",
+            "deps": [
+                "modules/util/event/event.es"
+            ],
+            "pkg": "p6"
+        },
+        "modules/util/event/event.es": {
+            "uri": "http://yanhaijing.com/allorigin/static/util/event/event_c362c2f.js",
+            "type": "js",
+            "deps": [
+                "components/jquery/jquery.js"
+            ],
+            "pkg": "p6"
+        },
+        "modules/util/template/template.es": {
+            "uri": "http://yanhaijing.com/allorigin/static/util/template/template_2a44356.js",
+            "type": "js",
+            "deps": [
+                "modules/lib/template/template.js"
+            ],
+            "pkg": "p6"
+        },
+        "modules/lib/template/template.js": {
+            "uri": "http://yanhaijing.com/allorigin/static/lib/template/template_bd64230.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "modules/lib/template/template"
+            },
+            "pkg": "p6"
+        },
+        "modules/app/common-case/common-case.scss": {
+            "uri": "http://yanhaijing.com/allorigin/static/app/common-case/common-case_ae2d77c.css",
+            "type": "css",
+            "pkg": "p3"
+        },
+        "modules/app/proto-chain/proto-chain.es": {
+            "uri": "http://yanhaijing.com/allorigin/static/app/proto-chain/proto-chain_1b6ec62.js",
+            "type": "js",
+            "deps": [
+                "components/jquery/jquery.js",
+                "modules/ui/base/base.es",
+                "modules/util/object/object.es",
+                "modules/util/template/template.es",
+                "modules/util/type/type.es",
+                "modules/util/evalCode/evalCode.es",
+                "modules/app/proto-chain/proto-chain.scss"
+            ],
+            "pkg": "p4"
+        },
+        "modules/util/evalCode/evalCode.es": {
+            "uri": "http://yanhaijing.com/allorigin/static/util/evalCode/evalCode_98ab3d9.js",
+            "type": "js",
+            "deps": [
+                "modules/util/type/type.es"
+            ],
+            "pkg": "p6"
+        },
+        "modules/app/proto-chain/proto-chain.scss": {
+            "uri": "http://yanhaijing.com/allorigin/static/app/proto-chain/proto-chain_16cb2ae.css",
+            "type": "css",
+            "pkg": "p3"
+        },
+        "modules/app/detail/detail.es": {
+            "uri": "http://yanhaijing.com/allorigin/static/app/detail/detail_d5155ae.js",
+            "type": "js",
+            "deps": [
+                "components/jquery/jquery.js",
+                "modules/ui/base/base.es",
+                "modules/util/type/type.es",
+                "modules/util/object/object.es",
+                "modules/util/evalCode/evalCode.es",
+                "modules/app/detail/detail.scss"
+            ],
+            "pkg": "p4"
+        },
+        "modules/app/detail/detail.scss": {
+            "uri": "http://yanhaijing.com/allorigin/static/app/detail/detail_d41d8cd.css",
+            "type": "css",
+            "pkg": "p3"
+        },
+        "modules/app/about/about.es": {
+            "uri": "http://yanhaijing.com/allorigin/static/app/about/about_5e4c89b.js",
+            "type": "js",
+            "deps": [
+                "components/jquery/jquery.js",
+                "modules/app/about/about.scss"
+            ],
+            "pkg": "p4"
+        },
+        "modules/app/about/about.scss": {
+            "uri": "http://yanhaijing.com/allorigin/static/app/about/about_18e89a9.css",
+            "type": "css",
+            "pkg": "p3"
+        }
+    },
+    "pkg": {
+        "p0": {
+            "uri": "http://yanhaijing.com/allorigin/pkg/common_cb7c6c1.css",
+            "type": "css",
+            "has": [
+                "modules/css/common.scss"
+            ]
+        },
+        "p1": {
+            "uri": "http://yanhaijing.com/allorigin/pkg/components_7aa285d.css",
+            "type": "css",
+            "has": [
+                "components/jquery-ui/themes/base/core.css",
+                "components/jquery-ui/themes/base/autocomplete.css",
+                "components/jquery-ui/themes/base/theme.css"
+            ]
+        },
+        "p2": {
+            "uri": "http://yanhaijing.com/allorigin/pkg/es5-shim_f8659cd.js",
+            "type": "js",
+            "has": [
+                "lib/es5-shim.js",
+                "lib/es5-sham.js"
+            ]
+        },
+        "p3": {
+            "uri": "http://yanhaijing.com/allorigin/pkg/modules_7350232.css",
+            "type": "css",
+            "has": [
+                "modules/html/header/header.scss",
+                "modules/html/footer/footer.scss",
+                "modules/html/forkme/forkme.scss",
+                "modules/app/common-case/common-case.scss",
+                "modules/app/proto-chain/proto-chain.scss",
+                "modules/app/detail/detail.scss",
+                "modules/app/about/about.scss"
+            ]
+        },
+        "p4": {
+            "uri": "http://yanhaijing.com/allorigin/pkg/aio_147902a.js",
+            "type": "js",
+            "has": [
+                "modules/app/common-case/common-case.es",
+                "modules/app/proto-chain/proto-chain.es",
+                "modules/app/detail/detail.es",
+                "modules/app/about/about.es",
+                "modules/app/index.es"
+            ],
+            "deps": [
+                "components/jquery/jquery.js",
+                "modules/ui/base/base.es",
+                "modules/util/template/template.es",
+                "modules/app/common-case/common-case.scss",
+                "modules/util/object/object.es",
+                "modules/util/type/type.es",
+                "modules/util/evalCode/evalCode.es",
+                "modules/app/proto-chain/proto-chain.scss",
+                "modules/app/detail/detail.scss",
+                "modules/app/about/about.scss",
+                "proto-chain.scss",
+                "components/jquery-ui/autocomplete.js",
+                "modules/lib/page.js/page.js",
+                "modules/util/uri/uri.es"
+            ]
+        },
+        "p5": {
+            "uri": "http://yanhaijing.com/allorigin/pkg/components_f597a6c.js",
+            "type": "js",
+            "has": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/core.js",
+                "components/jquery-ui/widget.js",
+                "components/jquery-ui/position.js",
+                "components/jquery-ui/menu.js",
+                "components/jquery-ui/autocomplete.js"
+            ]
+        },
+        "p6": {
+            "uri": "http://yanhaijing.com/allorigin/pkg/modules_a5c0a05.js",
+            "type": "js",
+            "has": [
+                "modules/lib/page.js/page.js",
+                "modules/util/uri/uri.es",
+                "modules/util/type/type.es",
+                "modules/util/object/object.es",
+                "modules/util/event/event.es",
+                "modules/ui/base/base.es",
+                "modules/lib/template/template.js",
+                "modules/util/template/template.es",
+                "modules/util/evalCode/evalCode.es"
+            ],
+            "deps": [
+                "path-to-regexp",
+                "_process",
+                "isarray",
+                "components/jquery/jquery.js"
+            ]
+        }
+    }
+}
