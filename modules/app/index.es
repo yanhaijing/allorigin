@@ -53,7 +53,8 @@ function init() {
     });
 
     // 配置路由
-    page.base('/');
+    // page.base('/');
+    page.base('/allorigin');
     page('*', function (ctx, next) {
         var hashs = ctx.hash.split('?');
         var path = hashs[0];
@@ -71,7 +72,7 @@ function init() {
             return 2;
         }
 
-        // 搜索页
+        // 详情页
         if (path === 'detail') {
             detail.render(decodeURIComponent(getQueryString('code', queryString)));
             return 3;
