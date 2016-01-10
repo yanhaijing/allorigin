@@ -5,7 +5,7 @@ var toString = {}.toString;
 function allToString(x) {
     return (x && x.toString && x.toString()) || toString.call(x);
 }
-// 获取 变量 对象的name
+// 获取 空 变量 对象 函数的name
 function getName(x) {
     if (isNullOrUndef(x)) {
         return type(x);

@@ -1,11 +1,17 @@
 <div class="area">
     <h3><#=title#></h3>
-    <ul>
-        <#list.forEach(function (v) {#>
-            <li>
-                <a href="https://developer.mozilla.org/en-US/search?q=<#=getName(target) + '.' + v#>"><#=v#></a>
-                <#=type(target[v])#>
-            </li>
-        <#})#>
-    </ul>
+    <#if (list.length === 0) {#>
+        <p>
+            (┬＿┬)
+        </p>
+    <#} else {#>
+        <ul>
+            <#list.forEach(function (v) {#>
+                <li>
+                    <a href="https://developer.mozilla.org/en-US/search?q=<#=getName(target) + '.' + v#>"><#=v#></a>
+                    <#=type(target[v])#>
+                </li>
+            <#})#>
+        </ul>
+    <#}#>
 </div>
