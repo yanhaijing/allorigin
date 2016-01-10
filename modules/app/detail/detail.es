@@ -6,7 +6,8 @@
 import $ from 'jquery';
 import {UIBase} from 'ui/base/base';
 import {type, isFunction, isNullOrUndef} from 'util/type/type';
-import {getProtoChain, getName, getMember, getOwnMember, getOwnAllMember} from 'app/object';
+import {getProtoChain, getName, getMember, getOwnMember, getOwnAllMember} from 'util/object/object';
+import {evalCode} from 'util/evalCode/evalCode';
 
 var detailTpl = __inline('detail.tmpl');
 var areaTpl = __inline('area.tmpl');
@@ -17,19 +18,14 @@ class Detail extends UIBase {
         this.$wp = $('#screen');
     }
     render(code) {
-        var target;
-        try {
-            target = eval('(' + code + ')');
+        var target = evalCode(code);
 
-            this.$wp.html(detailTpl({
-                areaTpl,
-                target,
-                type,
-                getMember, getOwnMember, getOwnAllMember, getName
-            }));
-        } catch (exp) {
-            alert(exp);
-        }
+        this.$wp.html(detailTpl({
+            areaTpl,
+            target,
+            type,
+            getMember, getOwnMember, getOwnAllMember, getName
+        }));
     }
 }
 

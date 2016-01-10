@@ -10,7 +10,7 @@ import 'jquery-ui/autocomplete';
 import page from 'lib/page.js/page';
 import {getQueryString} from 'util/uri/uri';
 import {type, isFunction, isNullOrUndef} from 'util/type/type';
-import {getProtoChain, getMember, getOwnMember, getOwnAllMember} from 'app/object';
+import {getProtoChain, getMember, getOwnMember, getOwnAllMember} from 'util/object/object';
 import {CommonCase} from 'common-case/common-case';
 import {ProtoChain} from 'proto-chain/proto-chain';
 import {Detail} from 'detail/detail';
