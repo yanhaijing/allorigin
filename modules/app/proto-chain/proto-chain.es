@@ -6,7 +6,7 @@
 
 import $ from 'jquery';
 import {UIBase} from 'ui/base/base';
-import {getProtoChain, getMember, getOwnMember, getOwnAllMember} from 'app/object';
+import {getProtoChain, getName, getMember, getOwnMember, getOwnAllMember} from 'app/object';
 import 'util/template/template';
 import {type, isFunction, isNullOrUndef} from 'util/type/type';
 
@@ -45,6 +45,7 @@ class ProtoChain extends UIBase {
             this.$screen.html(protoChainTpl({
                 list: this.chain,
                 type,
+                getName,
                 getMember, getOwnMember, getOwnAllMember
             }));
         } catch(exp) {
