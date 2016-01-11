@@ -53,8 +53,6 @@ function init() {
     });
 
     // 配置路由
-    // page.base('/');
-    page.base('/allorigin');
     page('*', function (ctx, next) {
         var hashs = ctx.hash.split('?');
         var path = hashs[0];
@@ -88,7 +86,8 @@ function init() {
         next();
         return 0;
     });
-    page('/', function (ctx, next) {
+    // / || /allorigin / 本地调试 /allorigin 线上
+    page(/(\/|\/allorigin)/, function (ctx, next) {
         commonCase.render();
     });
 
