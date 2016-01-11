@@ -8,7 +8,7 @@
         <ul>
             <#list.forEach(function (v) {#>
                 <li>
-                    <a href="https://developer.mozilla.org/en-US/search?q=<#=getName(target) + '.' + v#>"><#=v#></a>
+                    <a href="https://developer.mozilla.org/en-US/search?q=<#=getName(target) + '.' + v#>" target="_blank"><#=v#></a>
                     <#=type(target[v])#>
                 </li>
             <#})#>
