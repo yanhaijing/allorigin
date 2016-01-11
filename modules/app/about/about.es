@@ -6,7 +6,10 @@
 
 import $ from 'jquery';
 
-var html = __inline('about.tmpl')({});
+var html = __inline('about.tmpl')({
+    alipay: __uri('img/alipay.png'),
+    weixin: __uri('img/weixin.png')
+});
 var $wp = $('#screen');
 
 function render() {

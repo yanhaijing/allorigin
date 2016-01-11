@@ -1,0 +1,12 @@
+@import "compass-mixins/compass";
+@import "mixin";
+.donate {
+    @include clearfix();
+    figure {
+        float: left;
+        margin-right: 10px;
+    }
+    figcaption {
+        text-align: center;
+    }
+}
