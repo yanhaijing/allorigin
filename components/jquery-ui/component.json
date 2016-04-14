@@ -1,0 +1,9 @@
+{
+    "repos": "https://github.com/jquery/jquery-ui.git",
+    "version": "1.11.2",
+    "description": "jquery-ui",
+    "dependencies": [
+        "jquery@>=1.6"
+    ],
+    "name": "jquery-ui"
+}

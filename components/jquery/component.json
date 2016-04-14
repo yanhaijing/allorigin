@@ -1,0 +1,6 @@
+{
+    "repos": "https://github.com/jquery/jquery.git",
+    "version": "1.9.1",
+    "name": "jquery",
+    "main": "jquery.js"
+}
