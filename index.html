@@ -237,6 +237,12 @@ require.resourceMap({
   }
 });</script>
 <script src="http://yanhaijing.com/allorigin/pkg/es5-shim_f8659cd.js"></script>
+<script type="text/javascript" charset="utf-8">
+  require.async(['modules/app/index.es'], function(O) {
+      O.init();
+  });
+</script>
+
 <script src="//yanhaijing.com/assets/plugin/tongji/baidu.js"></script>
 <script type="text/javascript" charset="utf-8" src="http://v3.jiathis.com/code/jiathis_r.js?move=0"></script>    <!-- JiaThis Button BEGIN -->    <!-- JiaThis Button END -->
 </body>
