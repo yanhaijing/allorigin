@@ -1,12 +1,12 @@
-/*!/modules/html/header/header.scss*/
+/*!modules/html/header/header.scss*/
 .wgt-header{height:50px;background:#303a40}
 .wgt-header h1{display:inline-block;margin:0;line-height:50px;color:#fff;font-size:24px}
 .wgt-header a{color:#9d9d9d;text-decoration:none}
 .wgt-header a:hover{color:#fff}
 .wgt-header .nav-link{padding:0 15px}
-/*!/modules/html/footer/footer.scss*/
+/*!modules/html/footer/footer.scss*/
 .wgt-footer{margin-top:20px;padding:10px;text-align:center}
-/*!/modules/html/forkme/forkme.scss*/
+/*!modules/html/forkme/forkme.scss*/
 /*!
  * "Fork me on GitHub" CSS ribbon v0.1.1 | MIT License
  * https://github.com/simonwhitaker/github-fork-ribbon-css
@@ -23,16 +23,18 @@
 .github-fork-ribbon-wrapper.left .github-fork-ribbon{top:42px;left:-43px;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg)}
 .github-fork-ribbon-wrapper.left-bottom .github-fork-ribbon{top:80px;left:-43px;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg)}
 .github-fork-ribbon-wrapper.right-bottom .github-fork-ribbon{top:80px;right:-43px;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg)}
-/*!/modules/app/common-case/common-case.scss*/
+/*!modules/app/common-case/common-case.scss*/
 .wgt-common-case::after{content:"";display:table;clear:both}
 .wgt-common-case .col{float:left;width:25%}
-/*!/modules/app/proto-chain/proto-chain.scss*/
+/*!modules/app/proto-chain/proto-chain.scss*/
 .wgt-proto-chain .proto-item{position:relative;margin-top:40px;width:300px;border:1px solid #000;background:#CCD5AA;cursor:pointer}
 .wgt-proto-chain header{background:#879A4C}
 .wgt-proto-chain h3{margin:0;padding:5px 10px;color:#fff}
 .wgt-proto-chain .body{padding:10px}
 .wgt-proto-chain .arrow{position:absolute}
-/*!/modules/app/about/about.scss*/
+/*!modules/app/detail/detail.scss*/
+
+/*!modules/app/about/about.scss*/
 .donate::after{content:"";display:table;clear:both}
 .donate figure{float:left;margin-right:10px}
 .donate figcaption{text-align:center}

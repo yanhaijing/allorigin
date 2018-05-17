@@ -1,4 +1,4 @@
-/*!/components/jquery-ui/themes/base/core.css*/
+/*!components/jquery-ui/themes/base/core.css*/
 /*!
  * jQuery UI CSS Framework 1.11.2
  * http://jqueryui.com
@@ -20,7 +20,7 @@
 .ui-state-disabled{cursor:default!important}
 .ui-icon{display:block;text-indent:-99999px;overflow:hidden;background-repeat:no-repeat}
 .ui-widget-overlay{position:fixed;top:0;left:0;width:100%;height:100%}
-/*!/components/jquery-ui/themes/base/autocomplete.css*/
+/*!components/jquery-ui/themes/base/autocomplete.css*/
 /*!
  * jQuery UI Autocomplete 1.11.2
  * http://jqueryui.com
@@ -32,7 +32,7 @@
  * http://api.jqueryui.com/autocomplete/#theming
  */
 .ui-autocomplete{position:absolute;top:0;left:0;cursor:default}
-/*!/components/jquery-ui/themes/base/theme.css*/
+/*!components/jquery-ui/themes/base/theme.css*/
 /*!
  * jQuery UI CSS Framework 1.11.2
  * http://jqueryui.com
@@ -48,19 +48,19 @@
 .ui-widget{font-family:Verdana,Arial,sans-serif;font-size:1.1em}
 .ui-widget .ui-widget{font-size:1em}
 .ui-widget input,.ui-widget select,.ui-widget textarea,.ui-widget button{font-family:Verdana,Arial,sans-serif;font-size:1em}
-.ui-widget-content{border:1px solid #aaa;background:#fff url(http://yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-bg_flat_75_ffffff_40x100_8692e6e.png) 50% 50% repeat-x;color:#222}
+.ui-widget-content{border:1px solid #aaa;background:#fff url(//yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-bg_flat_75_ffffff_40x100_8692e6e.png) 50% 50% repeat-x;color:#222}
 .ui-widget-content a{color:#222}
-.ui-widget-header{border:1px solid #aaa;background:#ccc url(http://yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100_72c593d.png) 50% 50% repeat-x;color:#222;font-weight:700}
+.ui-widget-header{border:1px solid #aaa;background:#ccc url(//yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100_72c593d.png) 50% 50% repeat-x;color:#222;font-weight:700}
 .ui-widget-header a{color:#222}
-.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default{border:1px solid #d3d3d3;background:#e6e6e6 url(http://yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-bg_glass_75_e6e6e6_1x400_f425435.png) 50% 50% repeat-x;font-weight:400;color:#555}
+.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default{border:1px solid #d3d3d3;background:#e6e6e6 url(//yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-bg_glass_75_e6e6e6_1x400_f425435.png) 50% 50% repeat-x;font-weight:400;color:#555}
 .ui-state-default a,.ui-state-default a:link,.ui-state-default a:visited{color:#555;text-decoration:none}
-.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus{border:1px solid #999;background:#dadada url(http://yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-bg_glass_75_dadada_1x400_c12c651.png) 50% 50% repeat-x;font-weight:400;color:#212121}
+.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus{border:1px solid #999;background:#dadada url(//yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-bg_glass_75_dadada_1x400_c12c651.png) 50% 50% repeat-x;font-weight:400;color:#212121}
 .ui-state-hover a,.ui-state-hover a:hover,.ui-state-hover a:link,.ui-state-hover a:visited,.ui-state-focus a,.ui-state-focus a:hover,.ui-state-focus a:link,.ui-state-focus a:visited{color:#212121;text-decoration:none}
-.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active{border:1px solid #aaa;background:#fff url(http://yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-bg_glass_65_ffffff_1x400_e5a8f32.png) 50% 50% repeat-x;font-weight:400;color:#212121}
+.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active{border:1px solid #aaa;background:#fff url(//yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-bg_glass_65_ffffff_1x400_e5a8f32.png) 50% 50% repeat-x;font-weight:400;color:#212121}
 .ui-state-active a,.ui-state-active a:link,.ui-state-active a:visited{color:#212121;text-decoration:none}
-.ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight{border:1px solid #fcefa1;background:#fbf9ee url(http://yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-bg_glass_55_fbf9ee_1x400_f8f4558.png) 50% 50% repeat-x;color:#363636}
+.ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight{border:1px solid #fcefa1;background:#fbf9ee url(//yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-bg_glass_55_fbf9ee_1x400_f8f4558.png) 50% 50% repeat-x;color:#363636}
 .ui-state-highlight a,.ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a{color:#363636}
-.ui-state-error,.ui-widget-content .ui-state-error,.ui-widget-header .ui-state-error{border:1px solid #cd0a0a;background:#fef1ec url(http://yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-bg_glass_95_fef1ec_1x400_5a3be2d.png) 50% 50% repeat-x;color:#cd0a0a}
+.ui-state-error,.ui-widget-content .ui-state-error,.ui-widget-header .ui-state-error{border:1px solid #cd0a0a;background:#fef1ec url(//yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-bg_glass_95_fef1ec_1x400_5a3be2d.png) 50% 50% repeat-x;color:#cd0a0a}
 .ui-state-error a,.ui-widget-content .ui-state-error a,.ui-widget-header .ui-state-error a{color:#cd0a0a}
 .ui-state-error-text,.ui-widget-content .ui-state-error-text,.ui-widget-header .ui-state-error-text{color:#cd0a0a}
 .ui-priority-primary,.ui-widget-content .ui-priority-primary,.ui-widget-header .ui-priority-primary{font-weight:700}
@@ -68,13 +68,13 @@
 .ui-state-disabled,.ui-widget-content .ui-state-disabled,.ui-widget-header .ui-state-disabled{opacity:.35;filter:Alpha(Opacity=35);background-image:none}
 .ui-state-disabled .ui-icon{filter:Alpha(Opacity=35)}
 .ui-icon{width:16px;height:16px}
-.ui-icon,.ui-widget-content .ui-icon{background-image:url(http://yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-icons_222222_256x240_9129e08.png)}
-.ui-widget-header .ui-icon{background-image:url(http://yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-icons_222222_256x240_9129e08.png)}
-.ui-state-default .ui-icon{background-image:url(http://yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-icons_888888_256x240_faf6f5d.png)}
-.ui-state-hover .ui-icon,.ui-state-focus .ui-icon{background-image:url(http://yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-icons_454545_256x240_7710994.png)}
-.ui-state-active .ui-icon{background-image:url(http://yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-icons_454545_256x240_7710994.png)}
-.ui-state-highlight .ui-icon{background-image:url(http://yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-icons_2e83ff_256x240_25162bf.png)}
-.ui-state-error .ui-icon,.ui-state-error-text .ui-icon{background-image:url(http://yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-icons_cd0a0a_256x240_5d8808d.png)}
+.ui-icon,.ui-widget-content .ui-icon{background-image:url(//yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-icons_222222_256x240_9129e08.png)}
+.ui-widget-header .ui-icon{background-image:url(//yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-icons_222222_256x240_9129e08.png)}
+.ui-state-default .ui-icon{background-image:url(//yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-icons_888888_256x240_faf6f5d.png)}
+.ui-state-hover .ui-icon,.ui-state-focus .ui-icon{background-image:url(//yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-icons_454545_256x240_7710994.png)}
+.ui-state-active .ui-icon{background-image:url(//yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-icons_454545_256x240_7710994.png)}
+.ui-state-highlight .ui-icon{background-image:url(//yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-icons_2e83ff_256x240_25162bf.png)}
+.ui-state-error .ui-icon,.ui-state-error-text .ui-icon{background-image:url(//yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-icons_cd0a0a_256x240_5d8808d.png)}
 .ui-icon-blank{background-position:16px 16px}
 .ui-icon-carat-1-n{background-position:0 0}
 .ui-icon-carat-1-ne{background-position:-16px 0}
@@ -254,5 +254,5 @@
 .ui-corner-all,.ui-corner-top,.ui-corner-right,.ui-corner-tr{border-top-right-radius:4px}
 .ui-corner-all,.ui-corner-bottom,.ui-corner-left,.ui-corner-bl{border-bottom-left-radius:4px}
 .ui-corner-all,.ui-corner-bottom,.ui-corner-right,.ui-corner-br{border-bottom-right-radius:4px}
-.ui-widget-overlay{background:#aaa url(http://yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-bg_flat_0_aaaaaa_40x100_2a44fbd.png) 50% 50% repeat-x;opacity:.3;filter:Alpha(Opacity=30)}
-.ui-widget-shadow{margin:-8px 0 0 -8px;padding:8px;background:#aaa url(http://yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-bg_flat_0_aaaaaa_40x100_2a44fbd.png) 50% 50% repeat-x;opacity:.3;filter:Alpha(Opacity=30);border-radius:8px}
+.ui-widget-overlay{background:#aaa url(//yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-bg_flat_0_aaaaaa_40x100_2a44fbd.png) 50% 50% repeat-x;opacity:.3;filter:Alpha(Opacity=30)}
+.ui-widget-shadow{margin:-8px 0 0 -8px;padding:8px;background:#aaa url(//yanhaijing.com/allorigin/static/components/jquery-ui/themes/base/images/ui-bg_flat_0_aaaaaa_40x100_2a44fbd.png) 50% 50% repeat-x;opacity:.3;filter:Alpha(Opacity=30);border-radius:8px}
