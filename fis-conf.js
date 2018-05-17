@@ -114,7 +114,7 @@ var map = {
         path: ''
     },
     'prd': {
-        host: 'http://yanhaijing.com',
+        host: '//yanhaijing.com',
         path: '/${project.name}'
     }
 };
